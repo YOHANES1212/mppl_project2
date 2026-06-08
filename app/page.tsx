@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="h-screen w-full bg-slate-50 font-sans text-slate-900 flex flex-col overflow-hidden">
+    <main className="min-h-screen w-full bg-slate-50 font-sans text-slate-900 flex flex-col">
       
       {/* 1. Navigasi Bar */}
       <nav className="shrink-0 w-full h-[10vh] min-h-[70px] flex items-center justify-between px-6 lg:px-12 border-b border-white/50 bg-white/60 backdrop-blur-md z-50 shadow-sm">
@@ -32,7 +32,7 @@ export default function Home() {
       </nav>
 
       {/* 2. Konten Utama */}
-      <div className="flex-1 w-full max-w-7xl mx-auto px-6 flex items-center justify-center relative">
+      <div className="flex-1 w-full max-w-7xl mx-auto px-6 py-8 flex items-center justify-center relative">
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           
           {/* Kolom Kiri: Teks & Aksi */}

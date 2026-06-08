@@ -330,6 +330,13 @@ export default function LoginPage() {
         <div className="w-full lg:w-7/12 flex items-center justify-center p-8 sm:p-12 relative bg-white">
           <div className="w-full max-w-md space-y-7">
 
+            {/* Logo mobile — hanya tampil di layar kecil, karena panel kiri hidden */}
+            <div className="flex lg:hidden justify-center mb-2">
+              <Link href="/" className="text-2xl font-black text-slate-900 tracking-tight">
+                Smart<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Laundry</span>
+              </Link>
+            </div>
+
             {/* Role selector mobile */}
             <div className="flex lg:hidden gap-2 flex-wrap justify-center mb-2">
               {roles.map((role) => (
